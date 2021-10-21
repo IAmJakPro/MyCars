@@ -1,0 +1,18 @@
+@import '../../../styles/breakpoints';
+@import '../../../styles/mixins';
+
+@each $modifier, $breakpoint in $map-grid-props {
+  @if ($modifier == '') {
+    $modifier: '-xs';
+  }
+  @include create-mq($breakpoint - 1, 'max') {
+    .hidden#{$modifier}-down {
+      display: none !important;
+    }
+  }
+  @include create-mq($breakpoint, 'min') {
+    .hidden#{$modifier}-up {
+      display: none !important;
+    }
+  }
+}

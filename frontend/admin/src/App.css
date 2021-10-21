@@ -1,0 +1,18 @@
+/* #components-layout-demo-fixed-sider .logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.2);
+} */
+/* .site-layout .site-layout-background {
+  background: #fff;
+} */
+
+.cu-form {
+  width: 800px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.cu-form button[type='submit'] {
+  margin-top: 1rem;
+}

@@ -1,0 +1,44 @@
+@import '../../../styles/variables';
+
+.price {
+  display: flex;
+  align-items: center;
+  span {
+    color: $secondary;
+    font-size: 2rem;
+  }
+}
+
+.user-info-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  .user-info {
+    margin: 1rem;
+    h4 {
+      margin: 0.2rem 0;
+    }
+    small {
+      color: $secondary;
+    }
+  }
+}
+
+.ad-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  small,
+  span {
+    display: block;
+    text-align: center;
+  }
+  small {
+    color: $secondary;
+  }
+  span {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+}

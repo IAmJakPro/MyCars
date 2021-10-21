@@ -1,0 +1,81 @@
+[{
+        "name": "sedan",
+        "fr": "Berline",
+        "ar": "سيدان"
+    },
+    {
+        "name": "suv",
+        "fr": "SUV et 4x4",
+        "ar": "رباعية الدفع 4x4"
+    },
+    {
+        "name": "crossover",
+        "fr": "Crossover",
+        "ar": "كروسوفر"
+    },
+    {
+        "name": "van",
+        "fr": "Fourgon",
+        "ar": " فان (شاحِنة صَغيرة) "
+    },
+    {
+        "name": "coupe",
+        "fr": "Coupé",
+        "ar": "كوبيه"
+    },
+    {
+        "name": "hatchBack",
+        "fr": "Hayon",
+        "ar": "هاتشباك / سيارة مدمجة"
+    },
+    {
+        "name": "pickup",
+        "fr": "Pick Up",
+        "ar": "بكوب"
+    },
+    {
+        "name": "mini-truck",
+        "fr": "Mini camion",
+        "ar": "شاحنة صغيرة"
+    },
+    {
+        "name": "truck",
+        "fr": "Camion",
+        "ar": "شاحنة"
+    },
+    {
+        "name": "minivan",
+        "fr": "Fourgonnette",
+        "ar": "ميني فان"
+    },
+    {
+        "name": "cabriolet",
+        "fr": "Cabriolet",
+        "ar": "مكشوفة"
+    },
+    {
+        "name": "micro",
+        "fr": "Micro",
+        "ar": "سيارة صغيرة"
+    },
+    {
+        "name": "roadster",
+        "fr": "Roadster",
+        "ar": "سيارة رودستر"
+    },
+    {
+        "name": "supercar",
+        "fr": "SuperCar",
+        "ar": "سوبر كار"
+    },
+    {
+        "name": "campervan",
+        "fr": "Caravane",
+        "ar": "شاحنة التخييم"
+    },
+    {
+        "name": "sport-car",
+        "fr": "Voiture de sport",
+        "ar": "سيارة رياضية"
+    }
+]

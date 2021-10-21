@@ -1,0 +1,57 @@
+/* Colors */
+
+// White
+$white: #fff;
+
+// Grey
+$grey: #f6f5f1;
+$gray-dark: #d6d5d2;
+
+// Black
+$black: #000;
+$black-light: #42413d;
+
+// Green
+$green-light: #00e676;
+$green: #20ae44;
+$green-dark: #00ac6f;
+
+// Gold
+$premium-light: #fae361;
+$premium: #f0ab3a;
+$premium-dark: #a36807;
+$premium-darker: #aa8c5b;
+
+// Blue
+//$blue-lighter: #29b2fe;
+//$blue-light: #007fed;
+//$blue-light: #0058ff;
+//$blue-dark: #175fa3;
+
+$blue-light: #29b2fe;
+$blue: #007fed;
+$blue-dark: #164188;
+
+$tuna: #2f2d4a;
+$purple: #7d30c9;
+
+// Brand colors
+$primary: $blue;
+$secondary: $gray-dark;
+$success: #20ae44;
+$error: #ff6124;
+
+/* Border */
+$border-width: 1px !default;
+$border-color: $gray-dark;
+$border: $border-width solid $border-color;
+$border-radius: 0.3rem;
+
+/**/
+$spacer: 1rem !default;
+
+$box-shadow: 0 0.5rem 1rem rgba($black, 0.15) !default;
+
+$grid-gutter-width: 1.5rem !default;
+
+$text-decoration: none;

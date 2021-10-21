@@ -1,0 +1,46 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.badge {
+  //margin: 5px !important;
+  padding: 0.1rem 0.3rem;
+  border: 1px solid $secondary;
+  border-radius: 0.6rem;
+  color: $black-light;
+  @include css3Prefixes(height, min-content);
+
+  //Colors
+  &.primary {
+    @include background-opacity($grey, 0.25);
+  }
+  &.success {
+    @include background-opacity($blue-light, 0.8);
+    border-color: $blue-light;
+    color: $white;
+  }
+  &.error {
+    background-color: $error;
+    border-color: $error;
+    color: white;
+  }
+  &.premium {
+    background-color: $premium;
+    border-color: $premium;
+    color: white;
+  }
+
+  // Sizes
+  &.sm {
+    font-size: 0.6rem;
+  }
+  &.md {
+    font-size: 0.8rem;
+  }
+  &.lg {
+    font-size: 1rem;
+  }
+
+  .badge__icon {
+    margin-right: 0.3rem;
+  }
+}

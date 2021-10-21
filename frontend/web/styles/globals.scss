@@ -1,0 +1,15 @@
+@import './variables';
+@import './resets';
+@import './mixins';
+@import './utilities';
+
+select {
+  border: 1px solid $gray-dark;
+  width: 100%;
+  height: 2.3rem;
+  padding: 0.5rem;
+}
+
+.filepond--item {
+  width: 256px !important;
+}

@@ -1,0 +1,21 @@
+@import '../../../styles/variables';
+
+.top-panel {
+  background-color: $white;
+  padding: 1rem;
+  .panel-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  ul {
+    color: $secondary;
+    li {
+      display: inline;
+      font-size: 0.8rem;
+      a:hover {
+        color: $primary;
+        text-decoration: underline;
+      }
+    }
+  }
+}

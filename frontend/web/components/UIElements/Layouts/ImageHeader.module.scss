@@ -1,0 +1,28 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+$image-header-height: 30vmax;
+
+$image-header-search-bg-color: rgba(0, 0, 0, 0.5);
+$image-header-search-border-radius: $border-radius;
+$image-header-search-padding: 2rem;
+
+.image-header {
+  position: relative;
+  min-width: 100%;
+  height: $image-header-height;
+  & > .image-header__image {
+    width: 100%;
+    height: 100%;
+  }
+  & > .image-header__search {
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    background-color: $image-header-search-bg-color;
+    padding: $image-header-search-padding;
+    @include css3Prefixes(transform, translate(-50%, -50%));
+    @include css3Prefixes(border-radius, $image-header-search-border-radius);
+  }
+}

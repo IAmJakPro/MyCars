@@ -1,0 +1,107 @@
+@import '../../../styles/variables';
+@import '../../../styles//mixins';
+
+$card-spacer-y: $spacer !default;
+$card-spacer-x: $spacer !default;
+$card-title-spacer-y: $spacer * 2 !default;
+$card-border-width: $border-width !default;
+$card-border-color: rgba($black, 0.125) !default;
+$card-border-radius: $border-radius !default;
+$card-box-shadow: 1 !default;
+$card-inner-border-radius: subtract(
+  $card-border-radius,
+  $card-border-width
+) !default;
+$card-cap-padding-y: $card-spacer-y * 0.5 !default;
+$card-cap-padding-x: $card-spacer-x !default;
+$card-cap-bg: $white; //rgba($black, 0.03) !default;
+$card-cap-color: null !default;
+$card-height: null !default;
+$card-color: null !default;
+$card-bg: $white !default;
+$card-img-overlay-padding: $spacer !default;
+$card-group-margin: $grid-gutter-width * 0.5 !default;
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0; // See https://github.com/twbs/bootstrap/pull/22740#issuecomment-305868106
+  height: $card-height;
+  word-wrap: break-word;
+  background-color: $card-bg;
+  background-clip: border-box;
+  border: $card-border-width solid $card-border-color;
+  border-radius: $card-border-radius;
+  @include shadow($card-box-shadow);
+  width: 100%;
+  max-width: 100%;
+}
+
+.card__card-body {
+  // Enable `flex-grow: 1` for decks and groups so that card blocks take up
+  // as much space as possible, ensuring footers are aligned to the bottom.
+  flex: 1 1 auto;
+  padding: $card-spacer-y $card-spacer-x;
+  color: $card-color;
+}
+
+.card__card-title {
+  margin-bottom: $card-title-spacer-y;
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card__card-subtitle {
+  margin-top: -$card-title-spacer-y * 0.3;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 0.88rem;
+}
+
+.card__card-text:last-child {
+  margin-bottom: 0;
+}
+
+.card__card-link {
+  &:hover {
+    text-decoration: none;
+  }
+
+  + .card-link {
+    margin-left: $card-spacer-x;
+  }
+}
+
+//
+// Optional textual caps
+//
+
+.card__card-header {
+  padding: $card-cap-padding-y $card-cap-padding-x;
+  margin-bottom: 0; // Removes the default margin-bottom of <hN>
+  color: $card-cap-color;
+  background-color: $card-cap-bg;
+  border-bottom: $card-border-width solid $card-border-color;
+
+  &:first-child {
+    $border-radius: $card-inner-border-radius $card-inner-border-radius 0 0;
+  }
+}
+
+.card__card-footer {
+  padding: $card-cap-padding-y $card-cap-padding-x;
+  color: $card-cap-color;
+  background-color: $card-cap-bg;
+  border-top: $card-border-width solid $card-border-color;
+
+  &:last-child {
+    border-radius: 0 0 $card-inner-border-radius $card-inner-border-radius;
+  }
+}
+
+.card__card-img {
+  width: 100%;
+  margin: 0 auto;
+}

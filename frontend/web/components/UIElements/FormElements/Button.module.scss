@@ -1,0 +1,108 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+@import '../../../styles/forms';
+
+$btn-color: $primary !default;
+
+$btn-border-width: $border-width;
+$btn-border-color: transparent;
+$btn-border-radius: 20rem !default;
+
+$btn-vertical-padding: calc(0.5em - #{$btn-border-width}) !default;
+$btn-horizontal-padding: 2rem;
+
+$btn-height: calc(2.25rem + 2px) !default;
+
+.btn {
+  align-items: center;
+  -webkit-align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  display: -webkit-inline-flex;
+  @include css3Prefixes(flex-flow, row nowrap);
+  font-size: $spacer;
+  height: $btn-height;
+  justify-content: center;
+  -webkit-justify-content: center;
+  padding: $btn-vertical-padding $btn-horizontal-padding;
+  text-align: center;
+  @include css3Prefixes(user-select, none);
+  vertical-align: middle;
+  white-space: nowrap;
+  text-decoration: $text-decoration;
+  border-radius: $btn-border-radius;
+  border: $btn-border-width solid $btn-border-color;
+  color: $white;
+  background-color: $primary;
+  &:hover {
+    //background-color: #1b4c9b;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  }
+  &.success {
+    color: $white;
+    background-color: $success;
+  }
+  &.secondary {
+    color: $black-light;
+    background-color: $secondary;
+  }
+  &.premium {
+    color: $white;
+    background-color: $premium;
+  }
+  &.outlined {
+    color: $primary;
+    background-color: $white;
+    border: 1px solid $primary;
+    transition: all 0.2s ease-in-out;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      color: $white;
+      background-color: $primary;
+    }
+  }
+  &.outlined-success {
+    color: $success;
+    background-color: $white;
+    border: 1px solid $success;
+    transition: all 0.2s ease-in-out;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      color: $white;
+      background-color: $success;
+    }
+  }
+  &.outlined-secondary {
+    color: $secondary;
+    background-color: $white;
+    border: 1px solid $secondary;
+    transition: all 0.2s ease-in-out;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      color: $white;
+      background-color: $secondary;
+    }
+  }
+  &.outlined-premium {
+    color: $premium;
+    background-color: $white;
+    border: 1px solid $premium;
+    transition: all 0.2s ease-in-out;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      color: $white;
+      background-color: $premium;
+    }
+  }
+  .icon {
+    margin-right: 0.5rem;
+  }
+}

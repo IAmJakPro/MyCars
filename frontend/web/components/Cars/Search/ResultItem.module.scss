@@ -1,0 +1,64 @@
+@import '../../../styles/variables';
+
+.header h3 {
+  font-weight: 500;
+}
+
+
+.footer,
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price > h4 {
+  font-size: 1.5rem;
+  color: $primary;
+}
+
+.icon {
+  margin-right: 0.3rem;
+}
+
+.footer {
+  background-color: $grey;
+  padding: .3rem .5rem;
+  border-radius: .5rem;
+  & > small {
+    font-size: .7rem;
+    color: $premium-darker;
+  }
+}
+
+.specifications {
+  //color: $secondary;
+  font-weight: 500;
+  opacity: .9;
+  /* .specifications__icon {
+    margin-left: .3rem;
+  } */
+}
+
+.result-item {
+  position: relative;
+}
+
+.favorite {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  color: $white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-in-out;
+  &:hover,
+  &:active,
+  &:focus {
+    color: $premium;
+  }
+  &.active {
+    background-color: $premium;
+  }
+}

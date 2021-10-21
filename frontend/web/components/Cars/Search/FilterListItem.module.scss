@@ -1,0 +1,50 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.list-item {
+  border-bottom: $border;
+  .collapsible {
+    padding: 0.8rem 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    outline: none;
+    &::after {
+      content: '\002B';
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+    }
+    &.active {
+      &::after {
+        content: '\2212';
+      }
+    }
+    h4 {
+      margin: 0;
+    }
+  }
+}
+
+.content {
+  &.sub-options {
+    padding: 0 1rem;
+    overflow: hidden;
+    li {
+      padding: 0.3rem;
+    }
+    box-shadow: inset 0 6px 6px -4px hsla(0, 0%, 80%, 0.5);
+    max-height: 0;
+    @include css3Prefixes(
+      transition,
+      (max-height 0.5s ease-in-out, padding 0.5s ease-in-out)
+    );
+    background-color: #eee;
+    li {
+      display: block;
+    }
+  }
+}

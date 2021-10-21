@@ -1,0 +1,7 @@
+@import '../../styles/variables';
+
+.forgot-password-link,
+.login {
+  text-decoration: underline;
+  color: $secondary;
+}

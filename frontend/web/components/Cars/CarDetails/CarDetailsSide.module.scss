@@ -1,0 +1,28 @@
+@import '../../../styles/variables';
+
+.overview-specs {
+  .overview-item__header {
+    color: $secondary;
+    small {
+      display: block;
+      font-size: 0.7rem;
+    }
+  }
+  .overview-item__body {
+    font-size: 1.2rem;
+  }
+}
+
+.spec-details {
+  .spec-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    &__key {
+      color: $secondary;
+    }
+    &__value {
+      font-weight: 500;
+    }
+  }
+}

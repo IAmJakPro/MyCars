@@ -1,0 +1,18 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+@import '../../../styles/forms';
+
+.options-list {
+  padding-left: 0;
+  ul {
+    overflow-y: hidden;
+  }
+}
+
+.separator {
+  border-color: $gray-dark;
+  border-top-width: 0;
+  border-bottom-width: 0.1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

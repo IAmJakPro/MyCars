@@ -1,0 +1,24 @@
+@use "sass:math";
+@import '_grid.scss';
+
+@mixin create-col-classes($modifier, $grid-cols, $breakpoint) {
+  @include create-mq($breakpoint, 'min') {
+    .col#{$modifier}-offset-0 {
+      margin-left: 0;
+    }
+    @for $i from 1 through $grid-cols {
+      .col#{$modifier}-#{$i} {
+        flex-basis: math.div(100, math.div($grid-cols, $i)) * 1%;
+        width: math.div(100, math.div($grid-cols, $i)) * 1%;
+        padding: 0 0.5rem;
+      }
+      .col#{$modifier}-offset-#{$i} {
+        margin-left: math.div(100, math.div($grid-cols, $i)) * 1%;
+      }
+    }
+  }
+}
+
+@each $modifier, $breakpoint in $map-grid-props {
+  @include create-col-classes($modifier, $grid__cols, $breakpoint);
+}

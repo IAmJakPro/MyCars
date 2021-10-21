@@ -1,0 +1,39 @@
+@import '../../../styles/variables';
+
+.display-layouts {
+  button {
+    cursor: pointer;
+    color: $primary;
+    border: $border;
+    background-color: $white;
+    font-size: 1rem;
+    /* width: 2rem;
+    height: 2rem; */
+    padding: 0.3rem 0.5rem;
+    border-radius: .2rem;
+    transition: all 0.2s ease-in-out;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: $primary;
+      color: $white;
+    }
+  }
+  button:last-child {
+    margin-right: 1rem;
+  }
+  button:first-child {
+    margin-right: 0.5rem;
+  }
+}
+
+.filter-by {
+  margin-right: 1rem;
+}
+/* 
+  .display-button {
+      margin-right: .5rem;
+      cursor: pointer;
+  }
+   */

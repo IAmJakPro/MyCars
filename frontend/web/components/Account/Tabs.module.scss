@@ -1,0 +1,20 @@
+@import '../../styles/variables';
+
+.settings-list-items {
+  margin-top: 0;
+  li {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    a {
+      color: $primary;
+      display: block;
+      padding: 0.5rem;
+      border-radius: $border-radius;
+      cursor: pointer;
+      &.active {
+        background-color: $primary;
+        color: $white;
+      }
+    }
+  }
+}

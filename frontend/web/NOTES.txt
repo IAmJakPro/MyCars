@@ -1,0 +1,379 @@
+ Vehicle details #####
+// Vehicle
+- Category
+- Offer type
+- Brand
+- Condition
+- Crashed
+- Model
+- Year
+- Previous owners
+// Engine
+- Mileage
+- Engine
+- Transmission
+- Fuel type
+- Power
+- Drive type
+// Body
+- Exterior olor
+- Interior type
+- Doors
+- Seats
+- Interior type
+// Extras
+- Metalic
+- Airbags
+
+#####  #####
+// Images
+
+
+##### Classified ad details #####
+- Title
+- Description
+- Youtube video
+- Ad duration
+// Price
+- Price
+- Is negociable
+// Images
+- Images
+
+
+##### Contact details #####
+- Name
+- Email
+- Phone
+- City
+- Area
+
+
+
+
+/////////////////////////////////////////////////////
+## Website ##
+- Login
+- Register
+- 
+- Save a search
+
+## Classified Ads ##
+## Parts & Accessories ##
+- Chat
+- Create an ad
+- See all ads
+- Save an ad
+
+## Chat system ##
+## Jobs ##
+## Blog ##
+## Forum ##
+
+
+
+
+
+
+/************************ URLs ***********************/
+
+############ Cars ############
+
+//Search//
+"example.com/local/cars/city&other_options=dump"
+"example.com/local/used-cars/city&other_options=dump" 
+"example.com/local/new-cars/city&other_options=dump"
+
+"example.com/local/cars/city/cars_slug"
+"example.com/local/new-cars/city/cars_slug"
+"example.com/local/used-cars/city/cars_slug"
+
+//Creation//
+"example.com/local/cars/add"
+"example.com/local/cars/success"
+
+//Management //
+"example.com/local/my-cars"
+"example.com/local/car_slug/edit"
+
+
+############ Jobs ############
+//Search//
+"example.com/local/jobs/city&other_options"
+
+"example.com/local/jobs/city/job_slug"
+
+//Creation//
+"example.com/local/jobs/add"
+"example.com/local/jobs/success"
+
+//Management//
+"example.com/local/my-jobs"
+"example.com/local/jobs_slug/edit"
+
+############ Parts ############
+//Search//
+"example.com/local/parts/city&other_options"
+
+"example.com/local/parts/city/job_slug"
+
+//Creation//
+"example.com/local/parts/add"
+"example.com/local/parts/success"
+
+//Management//
+"example.com/local/my-parts"
+"example.com/local/parts_slug/edit"
+
+############ Account ############
+"example.com/local/login"
+"example.com/local/register"
+"example.com/local/forgot-password"
+"example.com/local/reset-password"
+"example.com/local/dashboard"
+"example.com/local/account"
+"example.com/local/account/edit"
+"example.com/local/saves-searches"
+
+//\\//\\DUPLICATE//\\//\\
+"example.com/local/my-parts/favorites"
+"example.com/local/parts_slug/edit"
+"example.com/local/my-jobs/favorites"
+"example.com/local/jobs_slug/edit"
+"example.com/local/my-cars/favorites"
+"example.com/local/car_slug/edit"
+
+############ Chats ############
+"example.com/local/chats"
+"example.com/local/chats/jobs/id"
+"example.com/local/chats/cars/id"
+"example.com/local/chats/parts/id"
+
+############ Pages ############
+"example.com/local/pages/page_slug"
+
+
+
+/************************ DATA ***********************/
+
+/\/\/\/\/\/\/\/\/\/\/\/\Cars/\/\/\/\/\/\/\/\/\/\/\/\
+##### Vehicle details #####
+// Vehicle
+- Category              
+- Offer type            
+- Brand                 
+- Condition
+- Crashed
+- Model
+- Year
+- Previous owners
+// Engine
+- Mileage
+- Engine
+- Transmission
+- Fuel type
+- Power
+- Drive type
+// Body
+- Color
+- Doors
+- Seats
+- Interior type
+// Extras
+- Metalic
+- Airbags
+
+##### Images #####
+// Images
+
+
+##### Classified ad details #####
+- Title
+- Description
+- Youtube video
+- Ad duration
+// Price
+- Price
+- Is negociable
+// Images
+- Images
+
+
+##### Contact details #####
+- Name
+- Email
+- Phone
+- City
+- Area
+
+
+
+
+////////////////////////// Cars Search URLs  ////////////////////////////////
+example.com/new-cars-for-sale-in-morocco/city
+example.com/used-cars-for-sale-in-morocco/city
+
+example.com/new-cars-for-rent-in-morocco/city
+example.com/used-cars-for-rent-in-morocco/city
+
+example.com/new-cars-wanted-in-morocco/city
+example.com/used-cars-wanted-in-morocco/city
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Features
+- Classified Ads
+- Chatting
+- Stores
+- Forum
+- Blog
+- Serving sponsors analytics
+- Bidding
+- Commenting
+
+
+## Classified ads ##
+These are the fundamentals of the platform.
+A classified ad can be (Car | Job | Part & Accessories)
+
+* Login
+* Logout
+* Register
+* Profile
+* Post a Car or Parts and accessories ad
+* See others classifieds ads
+* Search and filtering
+
+//Later
+* Add job classified ad
+* See nearest parkings
+* Save search
+* Save ad
+* Cars comparison
+* Allow users to send job proposals
+
+## Chatting ##
+A chatting system where the users can negciate or ask about the vehicle, and a allow chatting with admins and store owners
+* Chat with users which have ads
+* Chat with admins
+
+## Stores ##
+This feature help companies or individuals to create a store.
+Benefits of stores:
+- Can add store logo, description...etc
+- their posts can be liked, and rated along with commenting
+and it will be subscriptional.
+* Create and manage store
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Homepage
+// Authentication
+// Create an ad
+// Cars
+// Update profile
+// View my ads
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+example.com/ar/sayarat_mosta3mala_fi_almghrb
+example.com/fr/voitures_utilisé_au_maroc
+
+
+
+
+
+
+
+
+
+            IconFinder | thenounproject
+---------------------------------------------------------------------------------------------
+- Sedan		|   *      |    * FOUND
+---------------------------------------------------------------------------------------------
+- SUV       |   *      |    *
+---------------------------------------------------------------------------------------------
+- CUV       |   *      |    * FOUND
+---------------------------------------------------------------------------------------------
+- Van       |   *      |    * FOUND
+---------------------------------------------------------------------------------------------
+- Coupe     |   -      |    * FOUND
+---------------------------------------------------------------------------------------------
+- HatchBack |   *      |    * FOUND
+---------------------------------------------------------------------------------------------
+- Pickup    |   *      |    * FOUND
+---------------------------------------------------------------------------------------------
+- Mini Truck|   -      |    * FOUND
+---------------------------------------------------------------------------------------------
+- Truck     |   -*     |    * FOUND
+---------------------------------------------------------------------------------------------
+- MiniVan   |   *      |    * FOUND
+---------------------------------------------------------------------------------------------
+- Cabriolet |   -*     |    * FOUND
+---------------------------------------------------------------------------------------------
+- Micro     |    paid  |    * FOUND
+---------------------------------------------------------------------------------------------
+- Roadster  |    -     |    * FOUND
+---------------------------------------------------------------------------------------------
+- SuperCar  |    -     |    * FOUND
+---------------------------------------------------------------------------------------------
+- CamperVan |    *     |    * FOUND
+
+- Sport Car |          |    * FOUND
+
+
+####### BRANDS #######
+
+
+// This should be in the seatch card
+- City
+- Condition
+
+- Brand
+- Year
+- Category
+- Transmission
+- Fuel type
+- Kilometrage

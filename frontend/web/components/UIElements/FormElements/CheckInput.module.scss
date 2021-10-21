@@ -1,0 +1,114 @@
+@import '../../../styles/variables';
+@import '../../../styles/forms';
+
+/* .control-group {
+  display: inline-block;
+  vertical-align: top;
+  background: $white;
+  text-align: left;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 200px;
+  height: 210px;
+  margin: 10px;
+} */
+
+.form-control {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.control {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    &:checked {
+      & ~ .control__indicator {
+        background: $primary;
+        &:after {
+          display: block;
+        }
+      }
+    }
+    &:disabled {
+      & ~ .control__indicator {
+        background: $white;
+        opacity: 0.6;
+        pointer-events: none;
+      }
+    }
+  }
+}
+.control__indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: $secondary;
+  &:after {
+    content: '';
+    position: absolute;
+    display: none;
+  }
+}
+.control--radio {
+  .control__indicator {
+    border-radius: 50%;
+    &:after {
+      left: 7px;
+      top: 7px;
+      height: 6px;
+      width: 6px;
+      border-radius: 50%;
+      background: $white;
+    }
+  }
+  input {
+    &:disabled {
+      & ~ .control__indicator {
+        &:after {
+          background: $secondary;
+        }
+      }
+    }
+  }
+}
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+  background: $secondary;
+}
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+  background: $primary;
+}
+.control--checkbox {
+  .control__indicator {
+    &:after {
+      left: 8px;
+      top: 4px;
+      width: 3px;
+      height: 8px;
+      border: solid $white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  }
+  input {
+    &:disabled {
+      & ~ .control__indicator {
+        &:after {
+          border-color: $secondary;
+        }
+      }
+    }
+  }
+}
